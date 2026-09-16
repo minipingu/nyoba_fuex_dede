@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:nyoba_fuex_dede/app/home/homepage.dart';
+import 'package:nyoba_fuex_dede/app/home/page.dart';
 
 import 'package:nyoba_fuex_dede/main.dart';
 

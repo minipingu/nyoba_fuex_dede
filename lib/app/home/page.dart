@@ -9,10 +9,16 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
+  final int _selectedMenu = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        onTap: (val) {
+          setState(() {});
+        },
+        currentIndex: _selectedMenu,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.abc_outlined),
@@ -27,7 +33,7 @@ class _HomepageState extends State<Homepage> {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            Fuex.replace('/home');
+            Fuex.replace('/about');
           },
           child: Text('asdasdas'),
         ),
